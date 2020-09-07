@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <style>
+        h1{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome taco-实施cloud</h1>
+<img th:src="@{images/TacoCloud.png}"/>
+<div th:each="user : ${users}" th:text="${user.name}"></div>
+</body>
+</html>

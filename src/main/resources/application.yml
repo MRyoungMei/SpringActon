@@ -1,0 +1,16 @@
+server:
+  port: 80
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+#    url: jdbc:mysql://localhost:3306/jeecg-boot?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: 315@MRyoung
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.h2.Driver
+    schema: classpath:db/schema-h2.sql
+    data: classpath:db/data-h2.sql
+    url: jdbc:h2:mem:test
+    username: root
+    password: test
